@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOST WAGES</title>
+    <link rel="icon" type="image/png" href="assets/media/icons/favicon.ico"/>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1f327655ba.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="assets/script/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="assets/script/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="assets/script/jquery.fittext.js"></script>
+    <script src="assets/script/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<div id="menu">
+    <div id="menu-header">
+        <i id="menu-icon" class="fas fa-bars" onclick="showMenu()"></i><span> LOST WAGES</span>
+    </div>
+    <div id="menu-dropdown" class="hidden">
+        <ul class="menu-ul">
+            <li><a class="menu-link" href="index.html">HOME</a></li>
+            <li class="font-bold"><a class="menu-link">SHOP</a></li>
+            <li class="font-light"><a class="menu-link" href="items/bangladesh.html">BANGLADESH</a></li>
+            <li class="font-light"><a class="menu-link" href="items/cambodia.html">CAMBODIA</a></li>
+            <li class="font-light"><a class="menu-link" href="items/bangalore.html">INDIA (BLR)</a></li>
+            <li class="font-light"><a class="menu-link" href="items/ncr.html">INDIA (NCR)</a></li>
+            <li class="font-light"><a class="menu-link" href="items/tirupur.html">INDIA(TNPL)</a></li>
+            <li class="font-light"><a class="menu-link" href="items/indonesia.html">INDONESIA</a></li>
+            <li class="font-light"><a class="menu-link" href="items/myanmar.html">MYANMAR</a></li>
+            <li class="font-light"><a class="menu-link" href="items/pakistan.html">PAKISTAN</a></li>
+            <li class="font-light"><a class="menu-link" href="items/srilanka.html">SRI LANKA</a></li>
+            <li><a class="menu-link" href="about.html">ABOUT</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="map">
+    <object type="image/svg+xml" data="assets/media/graphics/worldmap.svg" id="world-map"></object>
+    <div style="display: flex; justify-content: center"><a href="#shop-title"><img style="height: 40px; width: 40px" src="assets/media/icons/shop_arrow.svg"></a></div>
+</div>
+<script src="assets/script/map-controller.js"></script>
+<div id="shop-title">
+    <h1 class="text-center font-bold">SPRING SEASON</h1>
+    <h3 class="text-center font-light">2020</h3>
+</div>
+<div id="card-container" class="grid">
+    <div class="myCard" onclick="openItem('items/bangladesh.html')">
+        <div class="myCard-wrap-image">
+            <div style="background-image: url(assets/media/photos/bangladesh-front.png)" class="myCard-image"></div>
+        </div>
+        <div class="myCard-name"><span>BANGLADESH</span></div>
+    </div>
+    <div class="myCard" onclick="openItem('items/cambodia.html')">
+        <div class="myCard-wrap-image">
+            <div style="background-image: url(assets/media/photos/cambodia-front.png)" class="myCard-image"></div>
+        </div>
+        <div class="myCard-name"><span>CAMBODIA</span></div>
+    </div>
+    <div class="myCard" onclick="openItem('items/bangalore.html')">
+        <div class="myCard-wrap-image">
+            <div style="background-image: url(assets/media/photos/bangalore-front.png)" class="myCard-image"></div>
+        </div>
+        <div class="myCard-name"><span>INDIA-BLR</span></div>
+    </div>
+    <div class="myCard" onclick="openItem('items/ncr.html')">
+        <div class="myCard-wrap-image">
+            <div style="background-image: url(assets/media/photos/ncr-front.png)" class="myCard-image"></div>
+        </div>
+        <div class="myCard-name"><span>INDIA-NCR</span></div>
+    </div>
+    <div class="myCard" onclick="openItem('items/tirupur.html')">
+        <div class="myCard-wrap-image">
+            <div style="background-image: url(assets/media/photos/tirupur-front.png)" class="myCard-image"></div>
+        </div>
+        <div class="myCard-name"><span>INDIA-TNPL</span></div>
+    </div>
+    <div class="myCard" onclick="openItem('items/indonesia.html')">
+        <div class="myCard-wrap-image">
+            <div style="background-image: url(assets/media/photos/indonesia-front.png)" class="myCard-image"></div>
+        </div>
+        <div class="myCard-name"><span>INDONESIA</span></div>
+    </div>
+    <div class="myCard" onclick="openItem('items/myanmar.html')">
+        <div class="myCard-wrap-image">
+            <div style="background-image: url(assets/media/photos/myanmar-front.png)" class="myCard-image"></div>
+        </div>
+        <div class="myCard-name"><span>MYANMAR</span></div>
+    </div>
+    <div class="myCard" onclick="openItem('items/pakistan.html')">
+        <div class="myCard-wrap-image">
+            <div style="background-image: url(assets/media/photos/pakistan-front.png)" class="myCard-image"></div>
+
+        </div>
+        <div class="myCard-name"><span>PAKISTAN</span></div>
+    </div>
+    <div class="myCard" onclick="openItem('items/srilanka.html')">
+        <div class="myCard-wrap-image">
+            <div style="background-image: url(assets/media/photos/srilanka-front.png)" class="myCard-image"></div>
+        </div>
+        <div class="myCard-name"><span>SRI LANKA</span></div>
+    </div>
+</div>
+<div id="footer">
+    <div class="grid">
+        <div class="footer-element"><span class="font-light">Infopoetry by</span><br> Fabiola Papini</div>
+        <div class="footer-element"><span class="font-light">Faculty</span> <br>Michele Mauri <br>Ángeles Briones <br>Gabriele
+            Colombo <br>Simone Vantini <br>Salvatore Zingale
+        </div>
+        <div class="footer-element"><span class="font-light">Teaching assistants</span> <br>Antonella Autori <br>Andrea
+            Benedetti <br>Matteo Bettini <br>Tommaso Elli <br>Andrea Febres Elena Medina <br>Beatrice Gobbo
+        </div>
+        <div class="footer-element"></div>
+        <div class="footer-element"><img class="footer-img" src="assets/media/logos/logo_density.png"></div>
+        <div class="footer-element"><img class="footer-img" src="assets/media/logos/logo_poli.png"></div>
+    </div>
+</div>
+
+<script src="assets/script/script.js"></script>
+</body>
+</html>
